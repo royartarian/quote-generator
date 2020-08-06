@@ -45,13 +45,12 @@ async function getQuote() {
 
     complete();
   } catch (error) {
-    const count = 10;
-    console.log(error);
-    while (count <= 10) {
+    let count = 0;
+    let maxTry = 10;
+    while (count < maxTry) {
       getQuote();
       count += 1;
-      console.log("error");
-      complete();
+      console.log(error);
     }
   }
 }
