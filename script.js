@@ -45,13 +45,7 @@ async function getQuote() {
 
     complete();
   } catch (error) {
-    let count = 0;
-    let maxTry = 10;
-    while (count < maxTry) {
-      getQuote();
-      count += 1;
-      console.log(error);
-    }
+        getQuote();
   }
 }
 
