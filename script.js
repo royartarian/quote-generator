@@ -46,6 +46,10 @@ async function getQuote() {
     complete();
   } catch (error) {
     console.log(error);
+    const count = 10; 
+    while (count < 10){
+        getQuote(); 
+    }
   }
 }
 
