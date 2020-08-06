@@ -45,7 +45,9 @@ async function getQuote() {
 
     complete();
   } catch (error) {
-        getQuote();
+        setTimeout(() => {
+            getQuote();
+        }, 4000);
   }
 }
 
