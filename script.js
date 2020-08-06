@@ -50,6 +50,7 @@ async function getQuote() {
     while (count < 10){
         getQuote(); 
         console.log('error')
+        complete();
     }
   }
 }
